@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashvardhan Sharma Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!--It is to connect the html with css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="header"> <!--This is for the content of Header-->
+        <div class="container">
+            <nav>
+                <img src="images/Gold_Luxury_Initial_Logo__1_-removebg-preview.png" class="logo">
+                <!--What logo u need for header-->
+                <ul id="sidemenu"> <!-- Header items-->
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p> <!--span is used to color a specific part-->
+                <h1>Hi, I'm <span>Yashvardhan</span><br>Sharma From India</h1>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!------------------ About------------------>
+
+
+    <div id="about"><!--All the details in about section-->
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><!--Image is added in lft column-->
+                    <img src="images/Pic1.jpg">
+
+                </div>
+                <div class="about-col-2"><!--Text is added in right column-->
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Detail-oriented and motivated Computer Science student with a
+                        strong foundation in software machine learning, algorithms, and data
+                        structures. Proficient in programming languages such as Python, Java,
+                        and C++, with hands-on experience in web development and database
+                        management. Demonstrated problem-solving skills and a passion for
+                        technology through successful completion of various projects and
+                        internships.</p>
+
+
+                    <!--This is to add 3 different tabs on the pages-->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!--This open tab is used open the specific tab on which we will click-->
+                        <!--class is used to provide name so that we can perform operation by directly names-->
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!--will add the content in each of the tab links by below way-->
+                    <div class="tab-contents active-tab" id="skills"> <!--id should be of same name of opentab-->
+                        <ul>
+                            <li><span>Languages:</span><br>Java, Python, C++, R programming</li>
+                            <li><span>Technologies:</span><br>HTML, CSS, JavaScript, Flask, Django,TensorFlow, PyTorch,
+                                Scikit-Learn, NLTK, SpaCy</li>
+                            <li><span>Databases:</span><br>MySQL, SQL, Couchbase, Kafka DB</li>
+                            <li><span>Tools:</span><br>VSCode, Jupyter Notebook, Postman, Agile, AWS , Git/GitHub, Linux
+                            </li>
+                            <li><span>Soft Skills:</span><br>Efficient in Problem solving,Teamwork,Time
+                                Management,Leadership,Effective Communication</li>
+                        </ul>
+                    </div>
+                    <!--Tab content for  experinece-->
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June,2023 - July,2024</span><br>Internship at SKIT as a C++ Intern</li>
+                            <li><span>June,2024 - August,2024</span><br>Internship at REGex Softwares as Machine
+                                Learning Intern</li>
+                        </ul>
+                    </div>
+                    <!--Tab content for Education-->
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Vadanta International School,Jaipur | CBSE</li>
+                            <li><span>2026</span><br>B.Tech in Computer Science & Engineering with Specialization in
+                                Data Science from SKIT, Jaipur</li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-----------------Services------------------->
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+
+                <!---------------Services Provided 1--------------->
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I offer modern, responsive, and user-friendly web development services tailored to meet your
+                        unique needs.
+                        From sleek portfolio sites to dynamic business websites and e-commerce platforms, I build clean,
+                        functional,
+                        and SEO-optimized solutions using the latest technologies like HTML, CSS, JavaScript, React, and
+                        Node.js.
+                        Whether you're a startup, a small business, or an individual looking to establish your online
+                        presence,
+                        I'm here to turn your vision into a fast, secure, and scalable website.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <!--------------Services provided 2---------------->
+
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Machine Learning Engineer</h2>
+                    <p>As a Machine Learning Engineer, I specialize in building intelligent systems that turn data into
+                        actionable insights.
+                        From developing predictive models and recommendation systems to deploying end-to-end ML
+                        pipelines, I leverage tools like Python,
+                        scikit-learn, TensorFlow, and PyTorch to solve real-world problems. Whether you're looking to
+                        automate processes, analyze complex data,
+                        or integrate AI into your product, I bring a results-driven approach to create scalable and
+                        efficient machine learning solutions.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+
+                <!----------------Services provided 3------------>
+
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Data Scientist</h2>
+                    <p>As a Data Scientist, I help businesses unlock the full potential of their data through advanced
+                        analytics, machine learning, and data-driven storytelling.
+                        I specialize in extracting insights, building predictive models, and creating visualizations
+                        that drive smarter decisions.
+                        With expertise in Python, SQL, Pandas, and tools like Tableau and Power BI, I turn raw data into
+                        clear, actionable strategies.
+                        Whether it's forecasting trends, optimizing operations, or solving complex problems—I deliver
+                        solutions backed by data.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------------------------Portfolio----------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <!-- Always visible 3 projects -->
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ecommerce.png" alt="E-commerce Site">
+                    <div class="layer">
+                        <h3>E-commerce Store - Zyphor</h3>
+                        <p>Built a full-stack MERN E-commerce site with cart, login, and admin panel. Deployed on
+                            Vercel.</p>
+                        <a href="https://zyphor-frontend.vercel.app/" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/ats.jpg" alt="ATS Project">
+                    <div class="layer">
+                        <h3>Applicant Tracking System</h3>
+                        <p>I developed an ATS that analyzes resumes using NLP to rank candidates, improving hiring
+                            efficiency.</p>
+                        <a href="https://yashats-45pcggxfqooquejh5uvuoc.streamlit.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/bamk-management.jpg" alt="Bank Management">
+                    <div class="layer">
+                        <h3>Bank Management System</h3>
+                        <p>Simulates core banking operations with account handling, using OOP and secure file
+                            management.</p>
+                        <a href="https://github.com/yashvardhan5/Bank_Management_System" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hidden projects initially not visible -->
+            <div class="work-list" id="more-work" style="display: none;">
+                <div class="work">
+                    <img src="images/supply chain.jpg" alt="Supply Chain">
+                    <div class="layer">
+                        <h3>Supply Chain Analysis</h3>
+                        <p>Analyzed and optimized logistics using data analysis in Python, Tableau, and inventory
+                            modeling.</p>
+                        <a href="https://github.com/yashvardhan5/" target="_blank"><i class="fas fa-external-link-alt"></i> </a>
+                    </div>
+                </div>
+
+
+                <!-- Add more hidden projects here if needed -->
+            </div>
+
+            <!-- Toggle Button -->
+            <a href="#" class="btn" onclick="toggleMoreWork(event)">See More</a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!----------------------Contact Me------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> vardhanyash9352@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 9587483461</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yashsharma2004/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/yashvardhan5"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="images/Yashvardhan_Sharma_CSE.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Yashvardhan<i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+
+    <!---------------------------------See more option functionality---------------------------->
+    <script>
+        function toggleMoreWork(event) {
+            event.preventDefault();
+            const moreWork = document.getElementById("more-work");
+            const btn = event.currentTarget;
+
+            if (moreWork.style.display === "none" || moreWork.style.display === "") {
+                moreWork.style.display = "grid"; // use grid for proper layout like your services
+                btn.textContent = "See Less";
+            } else {
+                moreWork.style.display = "none";
+                btn.textContent = "See More";
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+    <script>
+
+        /*To add the functionality of the tabs*/
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        /*Writing the function of open tab what it will do */
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+
+    <!--Script for small screen side menu-->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzYZid2nKOYOqVpAGVHPS-c3KOO2VbSpFu-LZgTxBSJqYeUxigya9-yzkWs9KG0sbc/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
